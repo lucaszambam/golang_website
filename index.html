@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golang</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/45b093f658.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -23,10 +26,18 @@
                 <li>Text 3</li>
                 <li>Text 4</li>
                 <li>
-                    <div>
-                        <input type="checkbox" id="toggle" class="theme-toggler_checkbox" checked />
-                        <span aria-hidden="true" class="theme-toggler_switch"></span>
+                    <div class="toggler-wrapper">
+                        <!-- <i class="fa-solid fa-sun icon-theme-toggler"></i>
+                        <i class="fa-solid fa-moon icon-theme-toggler"></i> -->
+                        <input onclick="themeToggler()" type="checkbox" checked id="theme_toggler">
+                        <label for="theme_toggler"></label>
                     </div>
+                </li>
+                <li>
+                    <i class="fa-brands fa-github"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-linkedin"></i>
                 </li>
             </ul>
         </nav>
@@ -36,15 +47,23 @@
 
     <section>
         <div class="central_area">
-            <h1 class="title_golang">Golang</h1>
-            <h2 class="subtitle_golang">Build fast, reliable, and efficient software at scale.</h2>
+            <h1 class="title_golang">The Go<br> Programming Language</h1>
+            <h2 class="subtitle_golang">Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.</h2>
             <div class="buttons_area">
-                <button class="button_central_area">Why Go</button>
-                <button class="button_central_area">Get started</button>
-                <button class="button_central_area">Install</button>
+                <button class="button_central_area"><i class="fa-solid fa-circle-play button_icons"></i>Why Go</button>
+                <button class="button_central_area button_grey"><a href="https://go.dev/doc/tutorial/getting-started" target="_blank">Get started</a><i class="fa-solid fa-arrow-right button_icons"></i></button>
+                <button class="button_central_area button_grey"><a href="https://go.dev/doc/install" target="_blank">Install</a></button>
             </div>
         </div>
     </section>
+
+    <hr>
+
+    <section>
+
+    </section>
+
+    <hr>
 
 </body>
 
