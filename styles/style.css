@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
 html {
     font-family: 'Fira Sans', sans-serif;
@@ -9,7 +10,116 @@ body{
     background: #1A1A1A;
 }
 
+#nav_golang {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    height: 1px;
+    background-color: #676767 !important;
+}
+
 .itens_list {
     display: flex;
+    align-items: center;
     gap: 1rem;
+}
+  
+  .theme-toggler_checkbox {
+    opacity: 0;
+    position: absolute;
+    right: 30px;
+    top: 25%;
+    z-index: 1; }
+  
+  
+  .theme-toggler_switch {
+    width: 50px;
+    height: 25px;
+    border-radius: 1em;
+    position: relative;
+    cursor: pointer;
+    background: #eee;
+    border: 1px solid #999999;
+    transition: all .1s linear;
+    display: inline-block;
+    vertical-align: middle; 
+    
+  }
+  
+.theme-toggler_switch::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    margin-top: 0px;
+    margin-left: 1.5px;
+    border-radius: 1em;
+    background: #1E1E1E;
+    border: 1px solid #1E1E1E;
+    box-shadow: 2px 5px 10px -2px rgba(0, 0, 0, 0.2);
+    transition: all .1s linear; 
+}
+  
+.theme-toggler_checkbox:focus + .theme-toggler_switch {
+    box-shadow: 0 0 0 5px #fff, 0 0 0 7px orange;
+    outline: 3px solid transparent; 
+}
+  
+.theme-toggler_checkbox:focus:not(:focus-visible) + .theme-toggler_switch {
+    box-shadow: none; 
+}
+  
+.theme-toggler_checkbox:checked + .theme-toggler_switch {
+    background: #393939;
+}
+  
+.theme-toggler_checkbox:checked + .theme-toggler_switch::after {
+    transform: translatex(22px);
+    transition: transform .1s linear;
+    border-color: #1E1E1E; 
+}
+
+.central_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.title_golang {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 102px;
+    background: linear-gradient(90.07deg, #0BFF91 2.65%, #14B9FF 99.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle_golang {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+
+.button_central_area {
+    background-color: #42D392;
+    border-radius: 12px;
+    height: 25px;
+    font-weight: 400;
+    font-size: 16.5px;
+    padding: revert;
+    color: #424242;
+    letter-spacing: 2px;
+    margin: 8px;
+    cursor: pointer;
 }
