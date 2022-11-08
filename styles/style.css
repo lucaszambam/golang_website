@@ -10,6 +10,19 @@ body{
     background: #1A1A1A;
 }
 
+#go_up_button {
+    display: none;
+    position: fixed;
+    background-color: #0bff91;
+    bottom: 100px;
+    right: 30px;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
 #nav_golang {
     display: flex;
     justify-content: space-between;
@@ -175,3 +188,24 @@ input:checked+label:after {
     font-size: 1.3rem;
     color: rgba(235, 235, 235, .6);
 }
+
+.getting_to_know_golang_area {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.hello_world_area {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 50px;
+}
+
+.hello_world_title {
+    text-align: center;
+}
+
+#go_hello_world {
+    width: 428px;
+    height: 288px;
+}   
