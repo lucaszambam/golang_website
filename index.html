@@ -17,7 +17,7 @@
     <header>
         <nav id="nav_golang">
             <div>
-                <object id="logo_golang" data="Go_Logo_White.svg"></object>
+                <object id="logo_golang" data="images/Go_Logo_White.svg"></object>
             </div>
 
             <ul class="itens_list">
@@ -27,8 +27,6 @@
                 <li>Text 4</li>
                 <li>
                     <div class="toggler-wrapper">
-                        <!-- <i class="fa-solid fa-sun icon-theme-toggler"></i>
-                        <i class="fa-solid fa-moon icon-theme-toggler"></i> -->
                         <input onclick="themeToggler()" type="checkbox" checked id="theme_toggler">
                         <label for="theme_toggler"></label>
                     </div>
@@ -45,18 +43,21 @@
 
     <hr>
 
-    <div id="go_up_button" on-click="scrollUp()">
+    <div id="go_up_button" onclick="scrollUp()">
         <i class="fa-solid fa-chevron-up"></i>
     </div>
 
     <section>
-        <div class="central_area">
+        <div class="central_area area">
             <h1 class="title_golang">The Go<br> Programming Language</h1>
-            <h2 class="subtitle_golang">Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.</h2>
+            <h2 class="subtitle_golang">Go is an open source programming language that makes it easy to build simple,
+                reliable, and efficient software.</h2>
             <div class="buttons_area">
                 <button class="button_central_area"><i class="fa-solid fa-circle-play button_icons"></i>Why Go</button>
-                <button class="button_central_area button_grey"><a href="https://go.dev/doc/tutorial/getting-started" target="_blank">Get started</a><i class="fa-solid fa-arrow-right button_icons"></i></button>
-                <button class="button_central_area button_grey"><a href="https://go.dev/doc/install" target="_blank">Install</a></button>
+                <button class="button_central_area button_grey"><a href="https://go.dev/doc/tutorial/getting-started"
+                        target="_blank">Get started</a><i class="fa-solid fa-arrow-right button_icons"></i></button>
+                <button class="button_central_area button_grey"><a href="https://go.dev/doc/install"
+                        target="_blank">Install</a></button>
             </div>
         </div>
     </section>
@@ -64,15 +65,59 @@
     <hr>
 
     <section>
-        <div class="getting_to_know_golang_area">
+        <div class="getting_to_know_golang_area area">
             <div class="hello_world_area">
-                <p class=hello_world_title">Go's<br> Hello World!</p>
-                <object data="Go_Hello_World.svg" id="go_hello_world"></object>
+                <p class="hello_world_title">Go's<br> Hello World!</p>
+                <object data="images/Go_Hello_World.svg" id="go_hello_world"></object>
             </div>
         </div>
     </section>
 
     <hr>
+
+    <section>
+        <div class="go_variables_area area">
+            <div class="variables_area">
+                <p class="variables_title">Variables</p>
+                <e.g. class="variables_text">
+                    var declares one or more variables.
+                    <br>You can declare multiple variables at once.
+                    <br>Go will infer the type of initialized variables.
+                    <br>Variables declared without a corresponding initialization are zero-valued.
+                    <br>For example, the zero value for an int is 0.
+                    <br>The := syntax is shorthand for declaring and initializing a variable.
+                    <br>e.g. for var f string = "apple" in this case.
+                </p>
+            </div>
+            <object data="images/Go_Variables.svg" id="go_variables"></object>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <div class="companies_go_area area">
+            <p class="companies_title">Companies using Go</p><br>
+            <br><div class="gos_companies">
+                <div class="companies_list">
+                    <div class="media_container"><object data="images/social/google.svg" class="social_media social_google"></object></div>
+                    <div class="media_container"><object data="images/social/capitalone_light.svg" class="social_media social_capitalone_light"></object></div>    
+                    <div class="media_container"><object data="images/social/cloudflare_light.svg" class="social_media social_cloudflare_light"></object></div>    
+                    <div class="media_container"><object data="images/social/mercadolibre_light.svg" class="social_media social_mercadolibre_light"></object></div>
+                    <div class="media_container"><object data="images/social/meta_light.svg" class="social_media social_meta_light"></object></div>
+                    <div class="media_container"><object data="images/social/microsoft_light.svg" class="social_media social_microsoft_light"></object></div>      
+                    <div class="media_container"><object data="images/social/netflix.svg" class="social_media social_netflix"></object></div>
+                    <div class="media_container"><object data="images/social/paypal.svg" class="social_media social_paypal"></object></div>
+                    <div class="media_container"><object data="images/social/riot_light.svg" class="social_media social_riot_light"></object></div>
+                    <div class="media_container"><object data="images/social/salesforce.svg" class="social_media social_salesforce"></object></div>
+                    <div class="media_container"><object data="images/social/twitch.svg" class="social_media social_twitch"></object></div>
+                    <div class="media_container"><object data="images/social/twitter.svg" class="social_media social_twitter"></object></div>
+                    <div class="media_container"><object data="images/social/uber_light.svg" class="social_media social_uber_light"></object></div>
+                    <div class="media_container"><object data="images/social/wildlife_light.svg" class="social_media social_wildlife_light"></object></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 
