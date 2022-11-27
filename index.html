@@ -31,17 +31,48 @@
                         <label for="theme_toggler"></label>
                     </div>
                 </li>
+            </ul>
+
+            <i class="fa-solid fa-bars" id="hamburguer_menu" onclick="toggleMobileMenu()"></i>
+        </nav>
+
+        <div id="mobile_dropdown">
+            <ul class="itens_list_mobile title">
+                <li><a href="#getting_to_know_golang_area">Examples</a></li>
+                <hr>
+                <li><a href="#go_vars_area">Variables</a></li>
+                <hr>
+                <li><a href="#companies_go_area">Companies</a></li>
+                <hr>
+                <li><a href="#form_area">Contact</a></li>
+                <hr>
                 <li>
-                    <i class="fa-brands fa-github"></i>
+                    <div class="toggler-wrapper">
+                        <input onclick="themeToggler()" type="checkbox" checked id="theme_toggler">
+                        <label for="theme_toggler"></label>
+                    </div>
                 </li>
                 <li>
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/lucaszambam" target="_blank"> Lucas Zambam</a> | 
+                    <a href="https://github.com/viniciusVitorio" target="_blank"> Vinicius Vitorio</a>
+                </li>
+                <hr>
+                <li>
                     <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/lucas-zambam-0a90ab1b9/" target="_blank"> Lucas Zambam</a> | 
+                    <a href="https://www.linkedin.com/in/viniciusvitorio/" target="_blank"> Vinicius Vitorio R.</a>
                 </li>
             </ul>
 
-            <i class="fa-solid fa-bars" id="hamburguer_menu"></i>
+            <div id="close_container" onclick="toggleMobileMenu()">
+                <div id="close_mobile_dropdown">
+                    <i class="fa-solid fa-caret-up"></i>
+                </div>
+            </div>
+        </div>
 
-        </nav>
+
     </header>
 
     <hr>
@@ -56,7 +87,7 @@
             <h2 class="subtitle_golang subtitle">Go is an open source programming language that makes it easy to build simple,
                 reliable, and efficient software.</h2>
             <div class="buttons_area">
-                <button class="button_central_area"><i class="fa-solid fa-circle-play button_icons"></i>Why Go</button>
+                <button class="button_central_area"><i class="fa-solid fa-circle-play button_icons"></i><a href="https://www.youtube.com/watch?v=446E-r0rXHI" target="_blank">Why Go</a></button>
                 <button class="button_central_area button_grey text"><a href="https://go.dev/doc/tutorial/getting-started"
                         target="_blank">Get started</a><i class="fa-solid fa-arrow-right button_icons text"></i></button>
                 <button class="button_central_area button_grey text"><a href="https://go.dev/doc/install"
@@ -129,21 +160,30 @@
             <p class="form_area_title title">Any doubts? Contact us!</p><br>
             <br><div class="go_form">
                 <div class="field-text-name">
-                    <label for="text-name" class="text-label">Name</label><br>
+                    <label for="text-name" class="text">Name</label><br>
                     <input type="text" class="form-name" name="text-name" id="text-name" required="required" aria-required="true">
                 </div>
                 <div class="text form-group field-text-email">
-                    <label for="text-email" class="text-label">E-mail</label><br>
+                    <label for="text-email" class="text">E-mail</label><br>
                     <input type="email" class="form-email" name="text-email" required="required" id="text-email">
                 </div>
                 <div class="text form-group field-text-message">
-                    <label for="text-message" class="text-label">Message</label><br>
+                    <label for="text-message" class="text">Message</label><br>
                     <input type="text" class="form-message" name="text-message" required="required" maxlength="300" id="text-message">
                 </div><br>
                 <button class="button_central_area" onclick="submitForm()">Submit</button>
             </div>
         </div>
     </section>
+
+    <hr>
+
+    <footer>
+        <div id="footer_area">
+            <p>Designed and built by <a href="https://github.com/lucaszambam" target="_blank"> Lucas Zambam </a> & <a href="https://github.com/viniciusVitorio" target="_blank"> Vinicius V. Rodrigues</a></p>
+            <p>UNIDAVI 2022 ©</p>
+        </div>
+    </footer>
 
 </body>
 
