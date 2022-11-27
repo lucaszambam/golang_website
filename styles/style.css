@@ -53,7 +53,7 @@ body {
     display: none;
 }
 
-.light #hamburguer_menu{
+.light #hamburguer_menu {
     color: #1A1A1A;
 }
 
@@ -371,6 +371,58 @@ footer {
     text-align: center;
 }
 
+.table_container {
+    display: flex;
+    justify-content: center;
+}
+
+table.golang_table {
+    border: 1px solid #2F2F2F;
+    width: 60%;
+    text-align: center;
+    border-collapse: separate;
+}
+
+table.golang_table td,
+table.golang_table th {
+    border: 1px solid #2F2F2F;
+    padding: 5px 4px;
+}
+
+table.golang_table th {
+    background-color: #2B2B2B;
+}
+
+table.golang_table tbody td {
+    font-size: 13px;
+    background-color: #2F2F2F;
+    height: 40px;
+    vertical-align: middle;
+}
+
+table.golang_table thead {
+    background: #CFCFCF;
+    border-bottom: 3px solid #2F2F2F;
+}
+
+table.golang_table thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #2F2F2F;
+    text-align: left;
+}
+
+table.golang_table tfoot {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2F2F2F;
+    border-top: 3px solid #2F2F2F;
+}
+
+table.golang_table tfoot td {
+    font-size: 14px;
+}
+
 @media (max-width: 1000px) {
     #nav_golang {
         padding-left: 20px;
@@ -430,6 +482,13 @@ footer {
         width: 200px;
     }
 
+}
+
+@media (max-width: 360px) {
+    table.golang_table {
+        word-break: break-word;
+        width: 90%;
+    }
 }
 
 @media (max-width: 330px) {
