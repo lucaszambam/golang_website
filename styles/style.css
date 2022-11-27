@@ -6,23 +6,27 @@ html {
     color: white;
 }
 
-body{
+body {
     background: #1A1A1A;
+    transition: background 0.5s;
 }
 
 .light {
     background: white !important;
 }
 
-.light .title, .light .subtitle, .light .text {
+.light .title,
+.light .subtitle,
+.light .text {
     color: #1A1A1A;
+    transition: color 0.5s;
 }
 
 #go_up_button {
     display: none;
     position: fixed;
     background-color: #0bff91;
-    bottom: 100px;
+    bottom: 110px;
     right: 30px;
     height: 40px;
     width: 40px;
@@ -38,6 +42,7 @@ body{
     padding: 20px;
     padding-left: 200px;
     padding-right: 200px;
+    position: relative;
 }
 
 #logo_golang {
@@ -46,6 +51,64 @@ body{
 
 #hamburguer_menu {
     display: none;
+}
+
+.light #hamburguer_menu{
+    color: #1A1A1A;
+}
+
+#mobile_dropdown {
+    transition: height .6s ease-in-out;
+    overflow: hidden;
+    position: absolute;
+    background: #333333;
+    width: 100%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.light .itens_list_mobile {
+    color: white !important;
+}
+
+.light .itens_list_mobile .fa-brands {
+    color: white !important;
+}
+
+#mobile_dropdown:not(.active) {
+    display: none;
+}
+
+#close_container {
+    display: flex;
+    justify-content: center;
+}
+
+#close_mobile_dropdown {
+    position: absolute;
+    background-color: #676767;
+    width: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -7px;
+}
+
+#close_mobile_dropdown:not(.active) {
+    display: none;
+}
+
+#mobile_dropdown hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.itens_list_mobile {
+    text-align: start !important;
+    padding-left: 10px;
+    position: relative;
+    padding: 20px;
 }
 
 hr {
@@ -65,7 +128,7 @@ hr {
     justify-content: center;
     align-items: center;
 }
-  
+
 #nav_golang input[type="checkbox"] {
     height: 0;
     width: 0;
@@ -148,9 +211,9 @@ hr {
     height: 38px;
     font-weight: 600;
     font-size: 18px;
-    padding-left: 10px; 
+    padding-left: 10px;
     padding-right: 10px;
-    padding-top: 15px; 
+    padding-top: 15px;
     padding-bottom: 15px;
     color: #213547;
     margin: 8px;
@@ -179,7 +242,7 @@ hr {
     font-weight: 500;
 }
 
-.button_icons{
+.button_icons {
     padding: 5px;
     padding-top: 7px;
 }
@@ -215,14 +278,16 @@ hr {
     color: rgba(51, 51, 51, 0.6);
 }
 
-.hello_world_area, .go_variables_area {
+.hello_world_area,
+.go_variables_area {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 50px;
 }
 
-.companies_title, .form_area_title {
+.companies_title,
+.form_area_title {
     display: flex;
     font-size: 50px;
     justify-content: center;
@@ -240,11 +305,12 @@ hr {
     margin-bottom: 80px;
 }
 
-#go_hello_world, #go_variables {
+#go_hello_world,
+#go_variables {
     width: 428px;
-}   
+}
 
-.media_container{
+.media_container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -256,7 +322,11 @@ hr {
     border-radius: 8px;
 }
 
-.social_media{
+.light .media_container {
+    background-color: #CFCFCF;
+}
+
+.social_media {
     width: 80px;
     height: 80px;
 }
@@ -268,7 +338,7 @@ hr {
     flex-wrap: wrap;
 }
 
-#form_area input{
+#form_area input {
     background-color: #CFCFCF;
     border-radius: 5px;
     width: 400px;
@@ -287,12 +357,28 @@ hr {
     flex-direction: column;
 }
 
+footer {
+    height: 100px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer_area p {
+    font-weight: 300;
+    margin: 5px;
+    text-align: center;
+}
+
 @media (max-width: 1000px) {
     #nav_golang {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .hello_world_area, #go_vars_area {
+
+    .hello_world_area,
+    #go_vars_area {
         flex-direction: column;
         gap: 40px;
     }
@@ -310,7 +396,11 @@ hr {
         font-size: 23px;
     }
 
-    .title_golang{
+    #hamburguer_menu .fa-xmark {
+        margin-right: 5px;
+    }
+
+    .title_golang {
         font-size: 45px;
     }
 }
@@ -321,7 +411,9 @@ hr {
         padding-right: 20px;
     }
 
-    .subtitle_golang, .variables_text, .title{
+    .subtitle_golang,
+    .variables_text,
+    .title {
         text-align: center;
     }
 
@@ -329,7 +421,8 @@ hr {
         flex-direction: column;
     }
 
-    #go_hello_world, #go_variables {
+    #go_hello_world,
+    #go_variables {
         width: 300px;
     }
 
@@ -340,11 +433,13 @@ hr {
 }
 
 @media (max-width: 330px) {
-    #go_hello_world, #go_variables {
+
+    #go_hello_world,
+    #go_variables {
         width: 230px;
     }
 
-    .title_golang{
+    .title_golang {
         font-size: 30px;
     }
 
