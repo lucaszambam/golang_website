@@ -9,7 +9,6 @@ const themeToggler  = () => {
     } else {
         goLogo.data = goLogoSource.replace('Go_Logo_Blue.svg', 'Go_Logo_White.svg');
     }
-    
 }
 
 const scrollUp = () => {
@@ -17,6 +16,10 @@ const scrollUp = () => {
         top: 0,
         behavior: 'smooth'
     });
+}
+
+const submitForm = () => {
+    console.log('Backend not implemented yet. Maybe sometime soon.')
 }
 
 document.addEventListener('scroll', () => {
