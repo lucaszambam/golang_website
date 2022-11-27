@@ -66,13 +66,13 @@ hr {
     align-items: center;
 }
   
-input[type="checkbox"] {
+#nav_golang input[type="checkbox"] {
     height: 0;
     width: 0;
     visibility: hidden;
 }
 
-label {
+#nav_golang label {
     cursor: pointer;
     text-indent: -9999px;
     width: 40px;
@@ -84,7 +84,7 @@ label {
     /* box-sizing: border-box; */
 }
 
-label:after {
+#nav_golang label:after {
     content: "";
     position: absolute;
     top: 2px;
@@ -97,12 +97,12 @@ label:after {
     background: rgb(255, 255, 255);
 }
 
-input:checked+label {
+#nav_golang input:checked+label {
     background: #2f2f2f;
     transition: 0.5s;
 }
 
-input:checked+label:after {
+#nav_golang input:checked+label:after {
     transition: 0.5s;
     top: 2px;
     left: 2px;
@@ -222,7 +222,7 @@ input:checked+label:after {
     font-size: 50px;
 }
 
-.companies_title {
+.companies_title, .form_area_title {
     display: flex;
     font-size: 50px;
     justify-content: center;
@@ -266,6 +266,25 @@ input:checked+label:after {
     justify-content: center;
     gap: 8px;
     flex-wrap: wrap;
+}
+
+#form_area input{
+    background-color: #CFCFCF;
+    border-radius: 5px;
+    width: 400px;
+    height: 30px;
+    color: black;
+}
+
+#form_area .form-message {
+    height: 90px;
+}
+
+.go_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 @media (max-width: 1000px) {
@@ -314,6 +333,10 @@ input:checked+label:after {
         width: 300px;
     }
 
+    #form_area input {
+        width: 200px;
+    }
+
 }
 
 @media (max-width: 330px) {
@@ -327,5 +350,9 @@ input:checked+label:after {
 
     .subtitle_golang {
         font-size: 18px;
+    }
+
+    #form_area input {
+        width: 100%;
     }
 }
