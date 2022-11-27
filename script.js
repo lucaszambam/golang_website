@@ -13,5 +13,5 @@ const scrollUp = () => {
 document.addEventListener('scroll', () => {
     const buttonScrollUp = document.getElementById('go_up_button');
 
-    buttonScrollUp.style.display = (window.scrollY >= 100) ? 'flex' : 'none';
+    buttonScrollUp.style.display = (window.scrollY >= 150) ? 'flex' : 'none';
 });
