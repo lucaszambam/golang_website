@@ -20,10 +20,10 @@
                 <object id="logo_golang" data="images/Go_Logo_White.svg"></object>
             </div>
 
-            <ul class="itens_list">
-                <li>Text 1</li>
-                <li>Text 2</li>
-                <li>Text 3</li>
+            <ul class="itens_list title">
+                <li><a href="#getting_to_know_golang_area">Examples</a></li>
+                <li><a href="#go_vars_area">Variables</a></li>
+                <li><a href="#companies_go_area">Companies</a></li>
                 <li>Text 4</li>
                 <li>
                     <div class="toggler-wrapper">
@@ -38,6 +38,10 @@
                     <i class="fa-brands fa-linkedin"></i>
                 </li>
             </ul>
+
+            <i class="fa-solid fa-bars" id="hamburguer_menu"></i>
+
+
         </nav>
     </header>
 
@@ -49,14 +53,14 @@
 
     <section>
         <div class="central_area area">
-            <h1 class="title_golang">The Go<br> Programming Language</h1>
-            <h2 class="subtitle_golang">Go is an open source programming language that makes it easy to build simple,
+            <h1 class="title_golang title">The Go<br> Programming Language</h1>
+            <h2 class="subtitle_golang subtitle">Go is an open source programming language that makes it easy to build simple,
                 reliable, and efficient software.</h2>
             <div class="buttons_area">
                 <button class="button_central_area"><i class="fa-solid fa-circle-play button_icons"></i>Why Go</button>
-                <button class="button_central_area button_grey"><a href="https://go.dev/doc/tutorial/getting-started"
-                        target="_blank">Get started</a><i class="fa-solid fa-arrow-right button_icons"></i></button>
-                <button class="button_central_area button_grey"><a href="https://go.dev/doc/install"
+                <button class="button_central_area button_grey text"><a href="https://go.dev/doc/tutorial/getting-started"
+                        target="_blank">Get started</a><i class="fa-solid fa-arrow-right button_icons text"></i></button>
+                <button class="button_central_area button_grey text"><a href="https://go.dev/doc/install"
                         target="_blank">Install</a></button>
             </div>
         </div>
@@ -65,9 +69,9 @@
     <hr>
 
     <section>
-        <div class="getting_to_know_golang_area area">
+        <div id="getting_to_know_golang_area" class="area">
             <div class="hello_world_area">
-                <p class="hello_world_title">Go's<br> Hello World!</p>
+                <p class="hello_world_title title">Go's<br> Hello World!</p>
                 <object data="images/Go_Hello_World.svg" id="go_hello_world"></object>
             </div>
         </div>
@@ -76,10 +80,10 @@
     <hr>
 
     <section>
-        <div class="go_variables_area area">
+        <div id="go_vars_area" class="go_variables_area area">
             <div class="variables_area">
-                <p class="variables_title">Variables</p>
-                <e.g. class="variables_text">
+                <p class="variables_title title">Variables</p>
+                <p class="variables_text text">
                     var declares one or more variables.
                     <br>You can declare multiple variables at once.
                     <br>Go will infer the type of initialized variables.
@@ -96,8 +100,8 @@
     <hr>
 
     <section>
-        <div class="companies_go_area area">
-            <p class="companies_title">Companies using Go</p><br>
+        <div id="companies_go_area" class="area">
+            <p class="companies_title title">Companies using Go</p><br>
             <br><div class="gos_companies">
                 <div class="companies_list">
                     <div class="media_container"><object data="images/social/google.svg" class="social_media social_google"></object></div>
