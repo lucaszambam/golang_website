@@ -10,6 +10,14 @@ body{
     background: #1A1A1A;
 }
 
+.light {
+    background: white !important;
+}
+
+.light .title, .light .subtitle, .light .text {
+    color: #1A1A1A;
+}
+
 #go_up_button {
     display: none;
     position: fixed;
@@ -34,6 +42,10 @@ body{
 
 #logo_golang {
     height: 30px;
+}
+
+#hamburguer_menu {
+    display: none;
 }
 
 hr {
@@ -146,14 +158,25 @@ input:checked+label:after {
     display: flex;
     justify-content: center;
     align-items: center;
+    white-space: nowrap;
+}
+
+.light .button_central_area {
+    color: white;
 }
 
 .button_grey {
-    background-color: #2f2f2f !important;
-    color: #aac8e4 !important;
-    font-weight: 400 !important;
+    background-color: #2f2f2f;
+    color: #aac8e4;
+    font-weight: 400;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.light .button_grey {
+    background-color: white;
+    color: #2f2f2f;
+    font-weight: 500;
 }
 
 .button_icons{
@@ -185,7 +208,11 @@ input:checked+label:after {
 .fa-brands {
     cursor: pointer;
     font-size: 1.3rem;
-    color: rgba(235, 235, 235, .6);
+    color: rgba(235, 235, 235, .8);
+}
+
+.light .fa-brands {
+    color: rgba(51, 51, 51, 0.6);
 }
 
 .hello_world_area, .go_variables_area {
@@ -239,4 +266,66 @@ input:checked+label:after {
     justify-content: center;
     gap: 8px;
     flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+    #nav_golang {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .hello_world_area, #go_vars_area {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .itens_list {
+        display: none;
+    }
+
+    #hamburguer_menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 23px;
+    }
+
+    .title_golang{
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 600px) {
+    .area {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .subtitle_golang, .variables_text, .title{
+        text-align: center;
+    }
+
+    .buttons_area {
+        flex-direction: column;
+    }
+
+    #go_hello_world, #go_variables {
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 330px) {
+    #go_hello_world, #go_variables {
+        width: 230px;
+    }
+
+    .title_golang{
+        font-size: 30px;
+    }
+
+    .subtitle_golang {
+        font-size: 18px;
+    }
 }
