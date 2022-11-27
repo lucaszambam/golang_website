@@ -24,7 +24,7 @@
                 <li><a href="#getting_to_know_golang_area">Examples</a></li>
                 <li><a href="#go_vars_area">Variables</a></li>
                 <li><a href="#companies_go_area">Companies</a></li>
-                <li>Text 4</li>
+                <li><a href="#form_area">Contact</a></li>
                 <li>
                     <div class="toggler-wrapper">
                         <input onclick="themeToggler()" type="checkbox" checked id="theme_toggler">
@@ -118,6 +118,29 @@
                     <div class="media_container"><object data="images/social/uber_light.svg" class="social_media social_uber_light"></object></div>
                     <div class="media_container"><object data="images/social/wildlife_light.svg" class="social_media social_wildlife_light"></object></div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <div id="form_area" class="area">
+            <p class="form_area_title title">Any doubts? Contact us!</p><br>
+            <br><div class="go_form">
+                <div class="field-text-name">
+                    <label for="text-name" class="text-label">Name</label><br>
+                    <input type="text" class="form-name" name="text-name" id="text-name" required="required" aria-required="true">
+                </div>
+                <div class="text form-group field-text-email">
+                    <label for="text-email" class="text-label">E-mail</label><br>
+                    <input type="email" class="form-email" name="text-email" required="required" id="text-email">
+                </div>
+                <div class="text form-group field-text-message">
+                    <label for="text-message" class="text-label">Message</label><br>
+                    <input type="text" class="form-message" name="text-message" required="required" maxlength="300" id="text-message">
+                </div><br>
+                <button class="button_central_area" onclick="submitForm()">Submit</button>
             </div>
         </div>
     </section>
